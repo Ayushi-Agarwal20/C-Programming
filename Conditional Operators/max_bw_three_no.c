@@ -2,21 +2,8 @@
 #include <stdio.h>
 int main()
 {
-    int n1,n2,n3;
-    scanf("%d",&n1);
-    scanf("%d",&n2);
-    scanf("%d",&n3);
-    if(n1>n2 && n1>n3)
-    {
-    printf("Maximum is %d", n1);
-    }
-    else if(n2>n1 && n2>n3)
-    {
-        printf("Maximum is %d", n2);
-    }
-    else
-    {
-        printf("Maximum is %d", n3);
-    }
+    int a,b,c;
+    scanf("%d%d%d",&a,&b,&c);
+    a>=b && a>=c ? printf("Maximum number is %d",a) : b>c ? printf("Maximum number is %d",b) : printf("Maximum number is %d",c);
     return 0;
 }
