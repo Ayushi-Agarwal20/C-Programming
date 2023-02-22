@@ -4,11 +4,6 @@ int main()
 {
     int a;
     scanf("%d", &a);
-    if(a%2==0)
-    {
-        printf("Number is even");
-    }
-    else{
-        printf("Number is odd");
-    }
+    a % 2 == 0 ? printf("It is an even number") : printf("It is an odd number");
+    return 0;
 }
