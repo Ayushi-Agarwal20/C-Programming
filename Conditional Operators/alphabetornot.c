@@ -4,13 +4,6 @@ int main()
 {
     char a;
     scanf("%c", &a);
-    if((a>='a' && a<='z') || (a>='A' && a<='Z'))
-    {
-        printf("It is an alphabet");
-    }
-    else
-    {
-        printf("It is not an alphabet");
-    }
+    (a>='a' && a<='z') ? printf("It is an alphabet") : (a>='A' && a<='Z') ? printf("It is an alphabet") : printf("It is not an alphabet");
     return 0;
 }
